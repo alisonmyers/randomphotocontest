@@ -1,14 +1,21 @@
 import React from 'react';
+import Marquee from 'react-fast-marquee';
+import Typography from '@mui/material/Typography';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <div className="banner">
-        <marquee behavior="scroll" direction="left" scrollamount="10">
-          <h1>Mac Wins</h1>
-        </marquee>
-        <p>He dug a big hole</p>
+      <header>
+        <Typography variant="h4" align="center">randomphotocontest</Typography>
+      </header>
+      <div className="content">
+        <div className="banner">
+          <Marquee autoFill speed={100}>
+            <Typography variant="h1"> Mac Wins! Mac Wins! </Typography>
+          </Marquee>
+          <Typography variant="body1" align="center">He dug a big hole</Typography>
+        </div>
       </div>
     </div>
   );

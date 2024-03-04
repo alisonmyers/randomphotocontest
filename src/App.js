@@ -1,9 +1,13 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Marquee from 'react-fast-marquee';
 import Typography from '@mui/material/Typography';
 import './App.css';
 
 function App() {
+  useEffect(() => {
+    document.title = "📷 randomphotocontest";
+  }, []);
+
   return (
     <div className="App">
       <header>
